@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    font-size: Arial;
+    box-sizing: border-box;
+}
+
+.layout-principal{
+    width: 100%;
+    height: 120px;
+}
+
+.layout-cabecalho{
+    background-color: #393D3F;
+    border: 0px 0px 3.5px 0px solid #B5EF8A;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}   
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.layout-rodape{
+    background-color: #393D3F;
+    height: 50px;
+}
+
+.layout-final-footer{
+    background-color: #33383E;
+    height: 10vh;
+}
