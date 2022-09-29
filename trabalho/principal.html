@@ -5,36 +5,192 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projetim Front End Essencial</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/componentes.css" />
   </head>
-  
+
   <body>
     <div class="layout-principal">
       <header class="layout-cabecalho">
-        <a href="menu.html" class=" botao botao--menu">≣Menu</a>
-        <img class="componentes-logo" src="img/Prancheta_2.png" alt="">     
-            <!-- <p  class="botao__menu">= Menu</p> -->
-        <a href="buscar.html" class=" botao botao--buscar">Buscar</a>
+        <nav class="navbar fixed-top navbar--cor">
+          <div class="container-fluid">
+            <a class="navbar-brand" href  ="#"></a>
+          </div>
+
+          <nav class="navbar navbar-expand-lg navbar--cor">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"
+                ><img src="img/Ativo_1.png" alt="#"
+              /></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link nav-link--cor"
+                      aria-current="page"
+                      href="#"
+                      >Início</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-link--cor" href="#">Sobre nós</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-link--cor" href="#">Login</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle nav-link--cor"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Notícias
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Política</a></li>
+                      <li><a class="dropdown-item" href="#">Futebol</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Entreterimento</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </nav>
       </header>
 
       <main>
+        <div class="layout-caixaNoticia">
         <section class="layout-noticia-principal">
-          <div class="noticia__principal">
-            <h1 class="noticia__titulo">Notícias Principais</h1>
-            
-            <!-- <img src="img/selecao.webp" alt="selecao"> -->
+          <div class="container-fluid">
+            <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#mainSlider"
+                  data-bs-slide-to="0"
+                  class="active"
+                ></button>
+
+                <button
+                  type="button"
+                  data-bs-target="#mainSlider"
+                  data-bs-slide-to="1"
+                ></button>
+
+                <button
+                  type="button"
+                  data-bs-target="#mainSlider"
+                  data-bs-slide-to="2"
+                ></button>
+              </div>
+
+              <div class="carousel-inner carousel-inner--block">
+                <div class="carousel-item active">
+                  <img
+                    src="img/Ativo_4.png"
+                    class="d-block w-100"
+                    alt="Projetos de e-commerce"
+                  />
+
+                  <div class="carousel-caption d-none d-md-block">
+                    <h2>O porquê de suco de uva integral ser tão gostoso</h2>
+
+                    <p>O melhor suco de todos, aprenda a fazer</p>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <img
+                    src="img/Ativo_3.png"
+                    class="d-block w-100"
+                    alt="Engenharia de Software"
+                  />
+
+                  <div class="carousel-caption d-none d-md-block">
+                    <h2>Ano do hexa?</h2>
+
+                    <p>
+                      Seleção brasileira <i>amassa</i> adversarios antes da copa
+                    </p>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <img
+                    src="img/Ativo_6.png"
+                    class="d-block w-100"
+                    alt="Manutenção de Software"
+                  />
+
+                  <div class="carousel-caption d-none d-md-block">
+                    <h2>Vulcão em erupção em Bangu</h2>
+
+                    <p>
+                      O impossível aconteceu
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
+      
+
+        <section>
+          <div class="row">
+            <div class="col-sm-6 col-md-5 col-lg-6" style="margin: 45px 1082px" ><img src="img/Ativo_7.png" alt=""></div>
+            <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0" style="margin: -377px 200px"><img src="img/Ativo_8.png" alt=""></div>
+          </div>
+        </section>
+      </div>
       </main>
+      
 
       <footer>
         <div class="layout-rodape">
           <div class="layout-final-footer">
             <div class="conteudo-final">
-              <img src="img/Prancheta_2.png" alt="" />  
+              <img src="img/Prancheta_2.png" alt="" />
+              <p style="color: white">
+                &reg; 1996 - 2022. Todos direitos reservados a GrapeJuice Ltda.
+                <br />Este material não pode ser publicado, transmitido por
+                broadcast, reescrito ou redistribuído sem autorização.
+              </p>
+              <div class="componentes-redessociais">
+                <p>Siga-nos.</p>
+                <a href="">Facebook</a><br />
+                <a href="">Instagram</a>
+              </div>
             </div>
           </div>
         </div>
