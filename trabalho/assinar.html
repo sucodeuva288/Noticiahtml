@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Cliente</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <main class="layout-assinatura">
+            <h1 class="titulo__assinatura">Formulário de assinatura para adesão ao plano de internet.</h1>
+            <!-- Via servidor é POST e via Url é GET => method-->
+            <form action="#">
+                <div class="row">
+                    <!-- my-3 é formatação -->
+                    <div class="my-3 col-sm-12 col-md-12">
+                        <label for="nome" class="form-label">Nome:</label>
+                        <input id="nome" type="text" class="form-control" placeholder="Preencha o seu nome completo"
+                            required="true" maxlength="30">
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- my-3 é formatação -->
+                    <div class="my-3 col-sm-12 col-md-12">
+                        <label for="email" class="form-label">E-mail:</label>
+                        <input id="email" type="email" class="form-control" placeholder="Preencha com o seu email"
+                            required="true" maxlength="40">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="my-3 col-sm-3 col-md-3">
+                        <label for="telefone" class="form-label">Telefone:</label>
+                        <input id="telefone" type="tel" class="form-control" placeholder="Preencha o seu telefone"
+                            required="true" maxlength="11">
+                    </div>
+
+                    <div class="my-3 col-sm-3 col-md-3">
+                        <label for="dataNascimento" class="form-label">Data de Nascimento:</label>
+                        <input id="dataNascimento" type="date" class="form-control" required="true">
+                    </div>
+
+                    <div class="my-3 col-sm-3 col-md-3">
+                        <label for="plano" class="form-label">Escolha o seu plano:</label>
+                        <select id="plano" class="form-control" required="true">
+                            <option value="N">Nehuma Opção</option>
+                            <option value="B">Plano Básico</option>
+                            <option value="I">Plano Intermediário</option>
+                            <option value="A">Plano Avançado</option>
+                        </select>
+                    </div>
+
+                    <div class="my-3 col-sm-3 col-md-3">
+                        <label for="servico" class="form-label">Serviço Adicional:</label>
+                        <div>
+                            <input id="servico-netflix" type="checkbox" value="Netflix">
+                            <label>Netflix</label>
+                            <input id="servico-premier" type="checkbox" value="Premier">
+                            <label>Premier</label>
+                            <input id="servico-globo" type="checkbox" value="Globo">
+                            <label>Globo Play</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="my-3 col-sm-4 col-md-4">
+                        <label for="avaliacao" class="form-label">Avaliação do Atendimento:
+                        <div>
+                            <input type="range" min="0" mas="100"step="5" list="avaliacao"></label>
+                            <datalist id="avaliacao">
+                                <option value="0" label="0%"></option>
+                                <option value="10" label="10"></option>
+                                <option value="20" label="20"></option>
+                                <option value="30" label="30"></option>
+                                <option value="40" label="40"></option>
+                                <option value="50" label="50"></option>
+                                <option value="60" label="60"></option>
+                                <option value="70" label="70"></option>
+                                <option value="80" label="80"></option>
+                                <option value="90" label="90"></option>
+                                <option value="100" label="100"></option>
+                            </datalist>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary">Enviar</button>
+                <input type="reset" value="Limpar" class="btn tbn-secondary">
+            </form>
+        </main>
+    </div>
+</body>
+</html>

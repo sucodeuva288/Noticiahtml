@@ -1,251 +1,254 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projetim Front End Essencial</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/componentes.css" />
-  </head>
 
-  <body>
-    <div class="layout-principal">
-      <header class="layout-cabecalho">
-        <nav class="navbar fixed-top navbar--cor">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projetim Front End Essencial</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/componentes.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header class="layout-cabecalho">
+      <nav class="navbar fixed-top navbar--cor">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar--cor">
           <div class="container-fluid">
-            <a class="navbar-brand" href  ="#"></a>
-          </div>
-
-          <nav class="navbar navbar-expand-lg navbar--cor">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"
-                ><img src="img/Ativo_1.png" alt="#"
-              /></a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a
-                      class="nav-link nav-link--cor"
-                      aria-current="page"
-                      href="#"
-                      >Início</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-link--cor" href="#">Sobre nós</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-link--cor" href="#">Assinatura</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle nav-link--cor"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Notícias
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Política</a></li>
-                      <li><a class="dropdown-item" href="#">Futebol</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">Entreterimento</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
+            <a class="navbar-brand" href="#"><img src="img/Ativo_1.png" alt="#" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link nav-link--cor" aria-current="page" href="#">Início</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-  -cor" href="sobre.html">Sobre nós</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link--cor" href="assinar.html">Assinatura</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle nav-link--cor" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Notícias
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Política</a></li>
+                    <li><a class="dropdown-item" href="#">Futebol</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Entreterimento</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </div>
-          </nav>
+          </div>
         </nav>
-      </header>
+      </nav>
+    </header>
+  
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
-      <main>
-        
-        <section>
-          <div class="container-fluid">
-            <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#mainSlider"
-                  data-bs-slide-to="0"
-                  class="active"
-                ></button>
+    <main>
 
-                <button
-                  type="button"
-                  data-bs-target="#mainSlider"
-                  data-bs-slide-to="1"
-                ></button>
+      <section>
+        <div class="container-fluid">
+          <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active"></button>
 
-                <button
-                  type="button"
-                  data-bs-target="#mainSlider"
-                  data-bs-slide-to="2"
-                ></button>
+              <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1"></button>
+
+              <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner carousel-inner--block" style="width:100%;">
+              <div class="carousel-item active">
+                <img src="img/Ativo_4.png" class="d-block w-100" alt="Suco de uva" />
+
+                <div class="carousel-caption d-none d-md-block">
+                  <h2>O porquê de suco de uva integral ser tão gostoso</h2>
+
+                  <p>O melhor suco de todos, aprenda a fazer</p>
+                </div>
               </div>
 
-              <div class="carousel-inner carousel-inner--block">
-                <div class="carousel-item active">
-                  <img
-                    src="img/Ativo_4.png"
-                    class="d-block w-100"
-                    alt="Suco de uva"
-                  />
+              <div class="carousel-item">
+                <img src="img/Ativo_3.png" class="d-block w-100" alt="Seleção brasileira" />
 
-                  <div class="carousel-caption d-none d-md-block">
-                    <h2>O porquê de suco de uva integral ser tão gostoso</h2>
-
-                    <p>O melhor suco de todos, aprenda a fazer</p>
-                  </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h2>Ano do hexa?</h2>
+                  <p>
+                    Seleção brasileira <i>amassa</i> adversarios antes da copa
+                  </p>
                 </div>
+              </div>
 
-                <div class="carousel-item">
-                  <img
-                    src="img/Ativo_3.png"
-                    class="d-block w-100"
-                    alt="Seleção brasileira"
-                  />
+              <div class="carousel-item">
+                <img src="img/Ativo_6.png" class="d-block w-100" alt="Vulcão em erupção" />
 
-                  <div class="carousel-caption d-none d-md-block">
-                    <h2>Ano do hexa?</h2>
+                <div class="carousel-caption d-none d-md-block">
+                  <h2>Vulcão em erupção em Bangu</h2>
 
-                    <p>
-                      Seleção brasileira <i>amassa</i> adversarios antes da copa
-                    </p>
-                  </div>
-                </div>
-
-                <div class="carousel-item">
-                  <img
-                    src="img/Ativo_6.png"
-                    class="d-block w-100"
-                    alt="Vulcão em erupção"
-                  />
-
-                  <div class="carousel-caption d-none d-md-block">
-                    <h2>Vulcão em erupção em Bangu</h2>
-
-                    <p>
-                      O impossível aconteceu
-                    </p>
-                  </div>
+                  <p>
+                    O impossível aconteceu
+                  </p>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-      
-        <div>
-          <div class="row">
-            <div class="col-sm-6 col-md-5 col-lg-6" style="margin: 45px 1164px" ><img style="box-shadow:5px 5px 2px 1px gray;" src="img/Ativo_9.png" alt="Lula e Bolsonaro" ></div>
-            <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0" style="margin: -396px 200px"><img style="box-shadow:5px 5px 2px 1px gray;" src="img/Ativo_10.png" alt="Toguro"></div>
           </div>
         </div>
-      </main>
+      </section>
 
-      <div class="container container--caixa1">
+
+      <div>
+        <figure id="lula">
+          <img style="box-shadow:5px 5px 2px 1px gray;" src="img/lulabonoro.png" alt="Lula e Bolsonaro">
+          <figcaption>Disputa pela presidência</figcaption>
+        </figure>
+        <figure id="toguro">
+          <img style="box-shadow:5px 5px 2px 1px gray;" src="img/Ativo_10.png" alt="Toguro">
+          <figcaption>Em pleno 2022...</figcaption>
+        </figure>
+      </div>
+    </main>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div id="ww_77f18944ce0a1" v='1.3' loc='id' a='{"t":"responsive","lang":"pt","ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","cl_odd":"rgba(93,37,37,0)"}'>Weather Data Source: <a href="https://lissabon.wetter-heute.org/" id="ww_77f18944ce0a1_u" target="_blank">lissabon.wetter-heute.org</a></div>
+    <script async src="https://app1.weatherwidget.org/js/?id=ww_77f18944ce0a1">
+      
+    </script>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div class="container container--caixa1">
+      <div class="row">
+        <div class="col-9">
+          <div class="layout-caixa1">
+
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="layout-caixa2">
+
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="layout-caixa3">
+
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+  </div>
+
+  <section class="sobre" id="noticia-sobre-contribuidores">
+    <div class="noticia-sobre-nos">
+      <div class="sobre-apresentacao">
+        <h4>Sobre os integrantes da empresa:</h4>
+        <p class="texto-sobre">
+          O nosso departamento físico fica localizado na cidade de Petrópolis - Rio de Janeiro, lá onde fica localizado
+          todos os servidores e os integrates da empresa.Ex magna adipisicing deserunt incididunt nisi velit anim est nulla. 
+          Qui esse eiusmod cillum dolor sit cillum cillum mollit velit aliquip occaecat. 
+          Voluptate nulla nostrud aliquip anim duis eu ea voluptate sunt velit cillum anim officia reprehenderit. Enim eiusmod nostrud esse do esse culpa aliquip officia. Incididunt ad do ut nisi aliqua minim do enim. Culpa nulla labore esse exercitation non aliquip incididunt id ad cupidatat ullamco nostrud.
+        </p>
+      </div>
+
+    </div>
+    <div class="localizacao">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d59008.9999601268!2d-43.3118487!3d-22.4266734!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99044e1c014285%3A0x1fb74a50a8f4af3c!2sCachoeira%20da%20Ponte%20Funda!5e0!3m2!1spt-BR!2sbr!4v1634761572938!5m2!1spt-BR!2sbr"
+        allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+  </section>
+
+  <section>
+    <div id="about-area">
+      <div class="container">
         <div class="row">
-          <div class="col-9">
-            <div class="layout-caixa1">
-              
-            </div>
+          <div class="col-12">
+            <h3 class="main__titulo">Sobre a <strong class="strong_do_logo" >MELLJ.COM</strong></h3>
           </div>
-          <div class="col-4">
-            <div class="layout-caixa2">
-              
-            </div>
+          <div class="col-md-6">
+            <img class="img-fluid" style="margin: 100px 20px ;" src="img/logo_alternativa.png" alt="logo do site">
           </div>
-          <div class="col-6">
-            <div class="layout-caixa3">
+          <div class="col-md-6">
+            <h3 class="pesonalizar_titulo">Uma página de nóticias gerais sobre todos os temas.</h3>
+            <p>As melhores notícias e mais quentes em primeiras mão.</p>
+            <p>Temos diversas novidades todos os dias em nosso site.</p>
+            <p>Nossa empresa nasceu no ano de 1968 com intuito de informar todas as pessoas as notícias do mundo, de
+              forma clara e rápida.
+              Hoje em dia somos renomados por diversos sites de pesquisas no mundo, como o melhor site de entreterimento
+              da América Latina.</p>
+            <p>Veja nossos diferenciais:</p>
+            <ul id="personalizacao-lista">
+              <li><i class="fas fa-check"></i> Notícias mais rápidas e mais bombásticas do mundo!</li>
+              <li><i class="fas fa-check"></i> Utilização de sistemas com o máximo de agilidade possível.</li>
+              <li><i class="fas fa-check"></i> Desenvolvimento e escrita das matérias postadas, são o nosso renomado
+                jornalista Uerleson Silva Nunes</li>
+            </ul>
+          </div>
+        </div>
+  </section>
 
-            </div>
+
+  <footer>
+    <div class="layout-rodape">
+      <div class="layout-final-footer">
+        <div class="conteudo-final">
+          <img src="img/Prancheta_2.png" alt="" />
+          <p style="color: white">
+            &reg; 1996 - 2022. Todos direitos reservados a GrapeJuice Ltda.
+            <br />Este material não pode ser publicado, transmitido por
+            broadcast, reescrito ou redistribuído sem autorização.
+          </p>
+          <div class="componentes-redessociais">
+            <p>Siga-nos.</p>
+            <a href="">Facebook</a><br />
+            <a href="">Instagram</a>
           </div>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
         </div>
       </div>
-      <br>
-      <br>
-      <br>
-      <section>
-        <div id="about-area">
-          <div class="container">
-              <div class="row">
-                <div class="col-12">
-                  <h3 class="main__titulo">Sobre a <strong>MELLJ.COM</strong></h3> 
-                </div>
-                <div class="col-md-6">
-                  <img class="img-fluid" style="margin: 100px 20px ;" src="img/logo_alternativa.png" alt="logo do site">
-                </div>
-                <div class="col-md-6">
-                  <h3 class="about-title">Uma página de nóticias gerais sobre todos os temas.</h3>
-                 <p>As melhores notícias e mais quentes em primeiras mão.</p>
-                  <p>Temos diversas novidades todos os dias em nosso site.</p>
-                  <p>Nossa empresa nasceu no ano de 1968 com intuito de informar todas as pessoas as notícias do mundo, de forma clara e rápida.
-                    Hoje em dia somos renomados por diversos sites de pesquisas no mundo, como o melhor site de entreterimento da América Latina.</p> 
-                <p>Veja nossos diferenciais:</p>
-                  <ul id="about-list">
-                    <li><i class="fas fa-check"></i> Notícias mais rápidas e mais bombásticas do mundo!</li>
-                    <li><i class="fas fa-check"></i> Utilização de sistemas com o máximo de agilidade possível.</li>
-                    <li><i class="fas fa-check"></i> Desenvolvimento e escrita das matérias postadas, são o nosso renomado jornalista Uerleson Silva Nunes</li>
-                  </ul>
-              </div>
-          </div>
-      </section>
-      
-
-      <footer>
-        <div class="layout-rodape">
-          <div class="layout-final-footer">
-            <div class="conteudo-final">
-              <img src="img/Prancheta_2.png" alt="" />
-              <p style="color: white">
-                &reg; 1996 - 2022. Todos direitos reservados a GrapeJuice Ltda.
-                <br />Este material não pode ser publicado, transmitido por
-                broadcast, reescrito ou redistribuído sem autorização.
-              </p>
-              <div class="componentes-redessociais">
-                <p>Siga-nos.</p>
-                <a href="">Facebook</a><br />
-                <a href="">Instagram</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
-  </body>
+  </footer>
+</body>
+
 </html>
