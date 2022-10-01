@@ -1,39 +1,39 @@
-*{
+* {
     margin: 0;
     font-size: Arial;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     width: 100%;
     height: 100%;
     padding: 0;
 
 }
 
-.layout-cabecalho{
-   
+.layout-cabecalho {
+
     border: 0px 0px 3.5px 0px solid #B5EF8A;
     width: 100%;
     height: 100%;
     display: flex;
-}   
+}
 
-.navbar--cor{
+.navbar--cor {
     background-color: #393D3F;
     margin-bottom: 10px;
 }
 
-.nav-link--cor{
-   color: #B5EF8A;
+.nav-link--cor {
+    color: #B5EF8A;
 }
 
-.nav-link--cor:hover{
+.nav-link--cor:hover {
     color: #74c735;
 }
 
 
-.nav-link--cor:active{
+.nav-link--cor:active {
     color: #393D3F;
 }
 
@@ -44,74 +44,81 @@
     display: inline-block;
     text-align:center;
     box-shadow:6px 6px 2px 1px rgb(150, 150, 150);
+}
+
+.layout-caixa1 {
+    background-color: white;
+    box-shadow: 6px 6px 2px 1px rgb(150, 150, 150);
     width: 132.5%;
     height: 500px;
     border-radius: 20px 20px 20px 20px;
     margin-left: 9px;
 }
 
-.layout-caixa2{
+.layout-caixa2 {
     background-color: white;
     border-radius: 20px 20px 20px 20px;
-    box-shadow:6px 6px 2px 1px rgb(150, 150, 150);
-    margin-top: 10%; 
+    box-shadow: 6px 6px 2px 1px rgb(150, 150, 150);
+    margin-top: 10%;
     width: 150%;
     height: 500px;
 }
 
-.layout-caixa3{
+.layout-caixa3 {
     background-color: white;
     border-radius: 20px 20px 20px 20px;
-    box-shadow:6px 6px 2px 1px rgb(150, 150, 150);
-    margin-top: 6.5%; 
+    box-shadow: 6px 6px 2px 1px rgb(150, 150, 150);
+    margin-top: 6.5%;
     margin-left: 35.5%;
     width: 98%;
     height: 500px;
 }
 
 /* carrosel */
-.carousel-inner--block{
-width: 1500px;
-height: auto;
-margin: 30px auto
+.carousel-inner--block {
+    width: 1500px;
+    height: auto;
+    margin: 30px auto
 }
 
-.carousel-control-prev-icon--setinhae{
+.carousel-control-prev-icon--setinhae {
     margin-left: 600px;
     color: black
 }
-.carousel-control-prev-icon--setinhad{
+
+.carousel-control-prev-icon--setinhad {
     margin-right: 450px;
 }
 
-.carousel-inner{
+.carousel-inner {
     border-radius: 2%;
-    box-shadow:6px 6px 2px 1px rgb(150, 150, 150);
-        
+    box-shadow: 6px 6px 2px 1px rgb(150, 150, 150);
+
 }
-.carousel-item >img{
+
+.carousel-item>img {
     border-radius: 2%;
 }
 
 
 /*rodape*/
-footer{
+footer {
     width: 100%;
- 
+
 }
 
-.layout-rodape{
+.layout-rodape {
     background-color: #393D3F;
     width: 100%;
 }
 
-.layout-final-footer{
+.layout-final-footer {
     background-color: #33383E;
     width: 100%;
-   
+
 }
 
-.conteudo-final{
+.conteudo-final {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -124,48 +131,90 @@ footer{
     position: relative;
     left: 1%;
     border-radius: 50%;
-  }
+}
 
-  #lula > img{
+#lula>img {
     border-radius: 2%;
-  }
-  
-  #lula figcaption {
+}
+
+#lula figcaption {
     position: absolute;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2em;
     color: white;
     bottom: 1px;
-    left:20%;    
-  }
+    left: 20%;
+}
 
-  #toguro {
+#toguro {
     display: inline-block;
     position: relative;
-    left:4%;
-  }
+    left: 4%;
+}
 
- #toguro > img{
+#toguro>img {
     border-radius: 2%;
- } 
-  
-  #toguro figcaption {
+}
+
+#toguro figcaption {
     position: absolute;
     font-size: 40px;
     color: #393D3F;
     bottom: 1px;
-    left: 20%;    
-  }
-   
+    left: 20%;
+}
 
-  /* PÁGINA SOBRE NÓS */
 
-  #layout-sobre{
-    border: 1px solid black;
-  }
+/* PÁGINA SOBRE NÓS */
 
-  .elemento-sobre{
-    border: 1px solid black;
-    width: 40px;
-    background-color: #74c735;
-  }
+/* BLOCOS */
+
+#sobre-nos {
+    padding-top: 10%;
+    background-color: #93CCD5;
+}
+
+article {
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    width: 90%;
+    background-color: #33383E;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 4px 4px 2px 1px rgb(150, 150, 150);
+}
+
+/* IMAGEM PARTICIPANTES */
+
+.div-image {
+    width: 50%;
+    margin: 5% auto;
+    text-align: center;
+    padding: 10px;
+    background-color: #33383E;
+}
+
+.image-sobre {
+    width: 120px;
+    border-radius: 50%;
+}
+
+/* LISTA */
+ul {
+    padding: 0;
+}
+
+.elemento-lista {
+    text-decoration: none;
+    margin: 5px;
+    list-style-type: none;
+    padding-left: 0;
+    background-color: #21808D;
+    border-radius: 3px;
+}
+
+.elemento-lista>a {
+    text-decoration: none;
+    color: #B5EF8A;
+}
