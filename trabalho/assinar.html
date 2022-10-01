@@ -6,14 +6,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Cliente</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/componentes.css" />
 </head>
 
 <body>
     <div class="container">
+        <div class="layout-principal">
+          <header class="layout-cabecalho">
+            <nav class="navbar fixed-top navbar--cor">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+              </div>
+    
+              <nav class="navbar navbar-expand-lg navbar--cor">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="img/Ativo_1.png" alt="#" /></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link nav-link--cor" aria-current="page" href="principal.html">Início</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link nav-link--cor" href="sobre.html">Sobre nós</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link nav-link--cor" href="#">Assinatura</a>
+                        
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nav-link--cor" href="#" role="button" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          Notícias
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="Politica.html">Política</a></li>
+                          <li><a class="dropdown-item" href="futebol.html">Esportes</a></li>
+                          <li>
+                            <a class="dropdown-item" href="entreterimento.html">Entreterimento</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </nav>
+          </header>
+    
         <main class="layout-assinatura">
-            <h1 class="titulo__assinatura">Formulário de assinatura para adesão ao plano de internet.</h1>
+            <h1 class="titulo__assinatura">Formulário de Assinatura Premium de Notícias.</h1>
             <!-- Via servidor é POST e via Url é GET => method-->
             <form action="#">
                 <div class="row">
@@ -48,21 +102,18 @@
                         <label for="plano" class="form-label">Escolha o seu plano:</label>
                         <select id="plano" class="form-control" required="true">
                             <option value="N">Nehuma Opção</option>
-                            <option value="B">Plano Básico</option>
-                            <option value="I">Plano Intermediário</option>
-                            <option value="A">Plano Avançado</option>
+                            <option value="B">Plano Basic</option>
+                            <option value="P">Plano Premium</option>
                         </select>
                     </div>
 
                     <div class="my-3 col-sm-3 col-md-3">
                         <label for="servico" class="form-label">Serviço Adicional:</label>
                         <div>
-                            <input id="servico-netflix" type="checkbox" value="Netflix">
-                            <label>Netflix</label>
+                            <input id="servico-g1" type="checkbox" value="G1">
+                            <label>G1.com</label>
                             <input id="servico-premier" type="checkbox" value="Premier">
                             <label>Premier</label>
-                            <input id="servico-globo" type="checkbox" value="Globo">
-                            <label>Globo Play</label>
                         </div>
                     </div>
                 </div>
@@ -73,7 +124,7 @@
                         <div>
                             <input type="range" min="0" mas="100"step="5" list="avaliacao"></label>
                             <datalist id="avaliacao">
-                                <option value="0" label="0%"></option>
+                                <option value="0" label="0"></option>
                                 <option value="10" label="10"></option>
                                 <option value="20" label="20"></option>
                                 <option value="30" label="30"></option>
@@ -93,5 +144,25 @@
             </form>
         </main>
     </div>
+    
+    <footer>
+      <div class="layout-rodape">
+        <div class="layout-final-footer">
+          <div class="conteudo-final">
+            <img src="img/Prancheta_2.png" alt="" />
+            <p style="color: white">
+              &reg; 1968 - 2022. Todos direitos reservados a GrapeJuice Ltda.
+              <br />Este material não pode ser publicado, transmitido por
+              broadcast, reescrito ou redistribuído sem autorização.
+            </p>
+            <div class="componentes-redessociais">
+              <p>Siga-nos.</p>
+              <a style="color: #B5EF8A" href="">Facebook</a><br />
+              <a style="color: #B5EF8A" href="">Instagram</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 </body>
 </html>

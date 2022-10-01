@@ -32,8 +32,7 @@
     color: #74c735;
 }
 
-
-.nav-link--cor:active {
+.nav-link--cor:focus {
     color: #393D3F;
 }
 

@@ -65,7 +65,7 @@
   text-align: center;
 }
 .strong_do_logo{
-  color:rgb(147, 204, 213);
+  color: #1D8A99;
 }
 
 .main__titulo::after{
@@ -92,13 +92,15 @@
   line-height: 25px;
 }
 
-#personalizacao-lista > i{
-  color: #65DAF9;
-  margin-right: 15px;
+#personalizacao-lista > li::before{
+  content: "✓";
+  font-size: 1.5rem;
+  color: #92b8c3;
+  font-style: bold;
 }
 
 .sobre {
-  background: rgb(147, 204, 213) ; 
+  background:#CACACA ; 
   padding: 2rem 5%;
   display: flex;
   align-items: center;
@@ -107,7 +109,7 @@
 
 .noticia-sobre-nos, .localizacao {
   color: #000000;
-  background-color: #d0d0d0;
+  background-color:rgb(220, 237, 251);
   height: 33rem;
   width: 47.5%;
 }
@@ -127,7 +129,7 @@
   margin-bottom: 1.75rem;  
 }
 
-.texto-sobre {
+.texto-sobre > p{
   font-size: 1.25rem;    
   justify-content: space-between;
 }
@@ -180,4 +182,10 @@
   margin-top: 180px;
   margin-left: 120px;
   color: rgb(80, 147, 201);
+  }
+
+  .componentes-textoNoticia{
+    text-align: left;
+    font-size: 2.5rem;
+    margin-left: 5px;
   }
