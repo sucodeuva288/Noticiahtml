@@ -77,8 +77,8 @@
 }
 
 .pesonalizar_titulo{
-  font-size: 17px;
-  color: #444;
+  font-size: 20px;
+  color: rgb(61, 60, 60);
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -105,6 +105,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.sobre-apresentacao {
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .noticia-sobre-nos, .localizacao {
