@@ -154,3 +154,30 @@
 .sobre-redes > a > img:hover {
   filter: invert(65%) sepia(5%) saturate(357%) hue-rotate(47deg) brightness(87%) contrast(86%);
 }
+
+.componentes-imgRecente1{
+  border-radius: 20px 0px 0px 20px;
+  margin-left: 0;
+  height: 100%;
+  width: 125%;
+}
+
+.componentes-imgRecente2{
+  height: 50%;
+  width: 100%;
+}
+
+.componentes-tituloNoticia1{
+  text-align: left;
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-left: 120px;
+}
+
+.componentes-tituloNoticia1--click{
+  text-align: left;
+  font-size: 2rem;
+  margin-top: 180px;
+  margin-left: 120px;
+  color: rgb(80, 147, 201);
+  }
